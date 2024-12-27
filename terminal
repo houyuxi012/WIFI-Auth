@@ -1,0 +1,29 @@
+npm create vite@latest wifi-auth -- --template vue
+cd wifi-auth
+npm install element-plus @element-plus/icons-vue vue-router pinia axios 
+
+# 1. 进入项目目录
+cd wifi-auth
+
+# 2. 删除 node_modules 和 package-lock.json
+rm -rf node_modules package-lock.json
+
+# 3. 重新安装所有依赖
+npm install
+
+# 4. 单独安装 pinia 和 axios
+npm install pinia axios
+
+# 5. 启动开发服务器
+npm run dev 
+
+# 创建必要的目录
+mkdir -p src/layouts src/views/admin
+
+# 创建必要的文件
+touch src/views/admin/Visitors.vue
+touch src/views/admin/Settings.vue 
+
+npm install -D @types/node 
+
+npm install element-plus 
